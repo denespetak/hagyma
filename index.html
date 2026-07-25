@@ -13,6 +13,17 @@
 
 <style>
 
+/* --- TARTALOM FADE-IN ANIMÁCIÓ BEÁLLÍTÁSA --- */
+/* A háttérszínek azonnal látszódnak, csak a belső tartalom rejtett alapból */
+.tartalom-szelesseg {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+body.loaded .tartalom-szelesseg {
+  opacity: 1;
+}
+
 /* Teljes alaphelyzetbe állítás a stabil görgetésért */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -22,10 +33,9 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-    overscroll-behavior: none;
+  overscroll-behavior: none;
   background-color: #292a2a;
   font-family: 'Bebas Neue', sans-serif;
- 
 }
 
 /* Szekció blokkok */
@@ -260,19 +270,19 @@ a, button, input {
 <div class="section-block" style="background-color: #eac864;">
 
   <div class="tartalom-szelesseg">
-
+    <br><br>
     <h1 class="bebas-regular">HAGYMA</h1>
 
     <img src="pics/cover-hagyma.png" alt="Hagyma kártya" class="cover-img">
-	<br><br>
+    <br><br>
 
     <h2 class="bebas-regular">Ismerjük egymást?</h2>
 
-<br><br>
+    <br><br>
 
     <hr class="vonatkozó-vonal">
 
-	<br><br>
+    <br><br>
 
     <p>
       <b>A Hagyma egy gyors, könnyen tanulható, 2-től 12 főig játszható, ön- és társismereti beszélgetős kártyajáték. </b>
@@ -281,7 +291,7 @@ a, button, input {
       A Hagyma kártyajáték megalkotása során az a cél vezérelte a tervezőket, hogy egy könnyed, ön- és társismereti társasjátékhoz hogyan lehet olyan kompetitív szabályrendszert kitalálni, amely a játékosok közti interakciókkal elősegíti egymás és saját magunk jobb megismerését. Továbbá az is deklarált cél volt, hogy ugyanolyan élményt adjon két játékos esetén, mint egy nagyobb társaságban játszva.
     </p>
 
-    <!-- Slideshow (Autómatikus váltással és nyilakkal) -->
+    <!-- Slideshow -->
     <div class="slideshow-container">
       <div class="slideshow-wrapper" id="slideshowWrapper">
         <div class="slide"><img src="pics/project009.jpg" alt="1. kép"></div>
@@ -299,14 +309,13 @@ a, button, input {
 <div class="section-block" style="background-color: #93c1a1;">
   <div class="tartalom-szelesseg">
     <h2 class="bebas-regular">Hogyan kell játszani?</h2>
-	
-	<br><br>
+    
+    <br><br>
 
     <hr class="vonatkozó-vonal">
 
-	<br><br>
-	
-	
+    <br><br>
+    
     <p>
       A kezdőjátékos a három különböző színű húzópakliból felfordít egy-egy tulajdonság-kártyát, és maga elé helyezi azokat. Ezt követően megpróbálja eldönteni, hogy milyen sorrendben igazak rá a felfordított tulajdonságok, és ennek megfelelően a kezében lévő három hagyma-kártyát képpel lefelé egymásra helyezi: a leginkább rá jellemző tulajdonság-kártyához tartozó hagyma-kártyát legalulra, a legkevésbé jellemző kártyát pedig legfelülre.
     </p>
@@ -336,30 +345,30 @@ a, button, input {
 <div class="section-block" style="background-color: #f47b2e;" id="work">
   <div class="tartalom-szelesseg">
     <h2 class="bebas-regular">RENDELÉS</h2>
-	
-		<br><br>
+    
+    <br><br>
 
     <hr class="vonatkozó-vonal">
 
-	<br><br>
-	
+    <br><br>
+    
     <p style="text-align: left;">
-      <b>Rendeld meg a saját példányodat most a Pagony webshopjában, vagy a boltok egyikében!<b>
+      <b>Rendeld meg a saját példányodat most a Pagony webshopjában, vagy a boltok egyikében!</b>
     </p>
     
-		<br><br>
-	
-<button class="webshop-btn" onclick="window.location.href='https://www.pagony.hu/osszes-termek'"><span class="bebas-regular">WEBSHOP</span></button>	
-		<br><br>
-	
-	    <p style="text-align: left;">
-GLS futárszolgálattal, MPL futárszolgálattal, GLS, MPL vagy Pick Pack Pont átvevőponton vagy átveheted valamelyik Pagony boltban.
+    <br><br>
+    
+    <button class="webshop-btn" onclick="window.location.href='https://www.pagony.hu/osszes-termek'"><span class="bebas-regular">WEBSHOP</span></button>  
+    <br><br>
+    
+    <p style="text-align: left;">
+      GLS futárszolgálattal, MPL futárszolgálattal, GLS, MPL vagy Pick Pack Pont átvevőponton vagy átveheted valamelyik Pagony boltban.
 
-A GLS futárszolgálat, GLS csomagpont és Pick Pack Pont esetén a 2-3 napos szállítási idő azon termékeinkre érvényes, amelyek készletünkön vannak. Amint átadtuk az árut a szállítónak, egy elektronikus levélben üzenetet küldünk. A MPL esetében hosszabb szállítási időre lehet számítani.
+      A GLS futárszolgálat, GLS csomagpont és Pick Pack Pont esetén a 2-3 napos szállítási idő azon termékeinkre érvényes, amelyek készletünkön vannak. Amint átadtuk az árut a szállítónak, egy elektronikus levélben üzenetet küldünk. A MPL esetében hosszabb szállítási időre lehet számítani.
 
-Bolti átvétel esetén szintén 2-3 napos szállítási idővel számolhatsz, ha minden termékünk készleten van a rendelésed feladásakor. Felhívjuk a figyelmed, hogy bolti csomagátvétel esetében azonban csak bankkártyás előreutalásra van lehetőséged, tehát a rendelés feladásakor kell kifizetned a csomagot.    
-</p>
-	
+      Bolti átvétel esetén szintén 2-3 napos szállítási idővel számolhatsz, ha minden termékünk készleten van a rendelésed feladásakor. Felhívjuk a figyelmed, hogy bolti csomagátvétel esetében azonban csak bankkártyás előreutalásra van lehetőséged, tehát a rendelés feladásakor kell kifizetned a csomagot.
+    </p>
+    
   </div>
 </div>
 
@@ -375,7 +384,7 @@ Bolti átvétel esetén szintén 2-3 napos szállítási idővel számolhatsz, h
         <a href="https://boardgamegeek.com/" target="_blank" aria-label="Instagram">
           <img src="pics/bgg.png" alt="Instagram" class="social-icon">
         </a>
-		<span class="social-divider"></span>
+        <span class="social-divider"></span>
         <a href="https://hu.pinterest.com/" target="_blank" aria-label="Instagram">
           <img src="pics/pint.png" alt="Instagram" class="social-icon">
         </a>
@@ -388,7 +397,7 @@ Bolti átvétel esetén szintén 2-3 napos szállítási idővel számolhatsz, h
   </div>
 </footer>
 
-<!-- Automatizált és Végtelenített Slideshow Léptető -->
+<!-- JavaScript kódok -->
 <script>
   let currentSlide = 0;
   const wrapper = document.getElementById('slideshowWrapper');
@@ -397,7 +406,6 @@ Bolti átvétel esetén szintén 2-3 napos szállítási idővel számolhatsz, h
   let autoSlideTimer = null;
 
   function goToSlide(index) {
-    // Végtelenített hurok: ha az utolsó után lép, visszamegy az 0. diára
     currentSlide = (index + totalSlides) % totalSlides;
     const slideWidth = wrapper.clientWidth;
     
@@ -413,7 +421,7 @@ Bolti átvétel esetén szintén 2-3 napos szállítási idővel számolhatsz, h
 
   function startAutoSlide() {
     stopAutoSlide();
-    autoSlideTimer = setInterval(nextSlide, 4000); // 4 másodpercenként vált
+    autoSlideTimer = setInterval(nextSlide, 4000);
   }
 
   function stopAutoSlide() {
@@ -424,10 +432,9 @@ Bolti átvétel esetén szintén 2-3 napos szállítási idővel számolhatsz, h
 
   function manualMoveSlide(direction) {
     goToSlide(currentSlide + direction);
-    startAutoSlide(); // Újraindítja az időzítőt manuális kattintás után
+    startAutoSlide();
   }
 
-  // Ujjal való swipe érzékelése és index szinkronizálása
   wrapper.addEventListener('scroll', () => {
     const slideWidth = wrapper.clientWidth;
     if (slideWidth > 0) {
@@ -438,9 +445,14 @@ Bolti átvétel esetén szintén 2-3 napos szállítási idővel számolhatsz, h
     }
   });
 
-  // Indítás betöltéskor
+  /* --- BETÖLTÉS ÉS 0.5 MP KÉSLELTETETT FADE-IN LOGIKA --- */
   window.addEventListener('load', () => {
     startAutoSlide();
+    
+    // Exact 500 ms (0.5 másodperc) várakozás az oldal betöltése után
+    setTimeout(() => {
+      document.body.classList.add('loaded');
+    }, 500);
   });
 </script>
 
