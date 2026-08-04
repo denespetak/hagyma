@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html lang="hu">
+
+<!-- Strukturált adat (Google)  -->
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Game",
+ "name":"HAGYMA",
+ "gamePlatform":"Card Game",
+ "inLanguage":"hu",
+ "description":"Magyar fejlesztésű kártyajáték.",
+ "url":"https://hagyma.com"
+}
+</script>
+
 <head>
 <link rel="icon" type="image/png" href="pics/favicon.png">
-<title>Hagyma Kártyajáték</title>
+<title>Hagyma Kártyajáték | Társasjáték Mindenkinek</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 
-<!-- Google Fonts betöltése -->
+<!-- Google Fonts  -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;1,300&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<!-- seo -->
+
+<meta name="description" content="A HAGYMA egy magyar fejlesztésű vicces kártyajáték. Gyors partijáték családoknak, barátoknak és társasjáték-rajongóknak.">
+<meta name="keywords" content="hagyma társasjáték, önismeret; hagyma kártyajáték, magyar társasjáték, partijáték, családi társasjáték, ajándék, pszichológia; kompetitív; könnyű társasjáték, egyszerű; gyors kártyajáték, minden korosztálynak">
+<link rel="canonical" href="https://hagyma.com/">
+
+<!--  Open Graph (Facebook) -->
+
+<meta property="og:title" content="HAGYMA – Magyar kártyajáték">
+<meta property="og:description" content="kreatív magyar kártyajáték minden korosztálynak.">
+<meta property="og:image" content="https://hagyma.com/pics/cover-hagyma.png">
+<meta property="og:url" content="https://hagyma.com/">
+<meta property="og:type" content="website">
 
 <style>
 
@@ -167,7 +196,7 @@ b, strong {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #eac864;
+  background-color: transparent;
   color: #292a2a;
   border: none;
   font-size: 24px;
@@ -183,7 +212,7 @@ b, strong {
 }
 
 .slide-btn:hover {
-  background-color: #ba9f50;
+  background-color: #eac864;;
   transform: translateY(-50%);
   box-shadow: none;
 }
@@ -200,7 +229,7 @@ b, strong {
 
 video {
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   height: auto;
   border-radius: 14px;
 }
@@ -295,9 +324,9 @@ a, button, input {
     <!-- Slideshow -->
     <div class="slideshow-container">
       <div class="slideshow-wrapper" id="slideshowWrapper">
-        <div class="slide"><img src="pics/project009.jpg" alt="1. kép"></div>
-        <div class="slide"><img src="pics/project011.jpg" alt="2. kép"></div>
-        <div class="slide"><img src="pics/project009.jpg" alt="3. kép"></div>
+        <div class="slide"><img src="pics/project009.jpg" alt="HAGYMA magyar kártyajáték játékkártyái"></div>
+        <div class="slide"><img src="pics/project011.jpg" alt="HAGYMA társasjáték"></div>
+        <div class="slide"><img src="pics/project009.jpg" alt="HAGYMA játék"></div>
       </div>
       <button class="slide-btn prev" onclick="manualMoveSlide(-1)" aria-label="Előző">&#10094;</button>
       <button class="slide-btn next" onclick="manualMoveSlide(1)" aria-label="Következő">&#10095;</button>
